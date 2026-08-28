@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="About"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="NFBeats is a student project by:\n\nCurtis King, Garrett Marcum,\nFrankie Ribas,\nDavid Bradbury, and Grifin Butler
+\n\n\nThis app utilizes NFC technology to store and retrieve data from NFC tags and redirect to Spotify as a modern form of physical
+music media.\n\nThink of it as a digital record player on your phone!\n\nTo put music onto a tag, tap the Write tab\n\nTo play a song from a tag, tap the Read tab"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Write"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="To write a Spotify link onto an NFC tag, you first need to find your desired link. Within Spotify, find whatever you want to store inside the tag. Now, find the '...' menu associated with your desired song, album, artist, or playlist, and open it to find the 'Share' button. After tapping the 'Share' button, tap the 'Copy link' button. This should copy the Spotify link to your device's clipboard. Return to the NFBeats app, and tap the 'Retrieve Link' button in the 'Write' tab. When prompted, tap the NFC tag to your phone. The Spotify link should now be stored within your NFC tag."
+                android:textAlignment="center"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Read"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="To read the Spotify link from your NFC tag, go to the 'Read' tab and tap the NFC tag to your phone when prompted. If the stored link is valid, your Spotify app will play the music shared by the link.\n"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
